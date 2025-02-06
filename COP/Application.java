@@ -5,8 +5,8 @@ public class Application {
         Activator ac = new Activator();
         Decision d;
 
-        double max = 40;
-        double min = -10;
+        double max = 40; // Maximum temperature
+        double min = -10; // Minimum temperature
         double temp = Math.random() * (max - min) + min;
         System.out.println("Initialize temperature: " + temp);
         cx.setTemperature(temp);
