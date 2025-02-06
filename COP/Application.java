@@ -7,7 +7,7 @@ public class Application {
 
         double max = 40; // Maximum temperature
         double min = -10; // Minimum temperature
-        double temp = Math.random() * (max - min) + min;
+        double temp = Math.random() * (max - min) + min; // temperature
         System.out.println("Initialize temperature: " + temp);
         cx.setTemperature(temp);
         int count = 0;
@@ -16,6 +16,7 @@ public class Application {
                 d = new Decision(cx);
                 ac.reconfig(d, cx);
                 Thread.sleep(300);
+                count++;
                 if (count % 3 == 0) {
                     cx.setTemperature((Math.random() * (max - min) + min));
                 }
