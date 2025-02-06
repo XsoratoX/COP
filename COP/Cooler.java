@@ -1,8 +1,8 @@
-public class Cooler extends AirConditioner{
+public class Cooler extends AirConditioner {
     @Override
-    public double function(double temperature){
-        double result = temperature - 0.1;
-        System.out.println("Now temperature: " + result);
+    public double function(double temperature) {
+        double result = temperature - 1.0;
+        System.out.println("[Cooler]Now temperature: " + result);
         return result;
     }
 }
