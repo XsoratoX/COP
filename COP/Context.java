@@ -1,11 +1,11 @@
-public class Contexte {
+public class Context {
     private double temperature;
 
-    public Context(){
+    public Context() {
         this.temperature = 0.0;
     }
 
-    public Context(double temperature){
+    public Context(double temperature) {
         this.temperature = temperature;
     }
 
