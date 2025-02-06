@@ -1,7 +1,7 @@
 public class Application {
     public static void main(String args[]) {
 
-        Context cx = new Context();
+        Context cx = new Context(); // Context
         Activator ac = new Activator();
         Decision d;
 
